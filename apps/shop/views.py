@@ -6,7 +6,7 @@ from apps.shop.models import Product
 
 def product_list(request):
     products = Product.objects.all()
-    return render(request, 'shop/products_list.html', {'products': products})
+    return render(request, 'shop/shop.html', {'products': products})
 
 
 class ProductDetail(DetailView):
