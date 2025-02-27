@@ -59,7 +59,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>{{ product.name }}</h4>
+                                                    <h4>
+                                                    <a href = "{% url 'product-detail' product.pk %}">{{ product.name }}</a>
+                                                    </h4>
                                                     <h5> {{ product.price }}</h5>
                                                 </div>
                                             </div>

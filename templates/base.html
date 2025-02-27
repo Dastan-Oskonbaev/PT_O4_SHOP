@@ -119,20 +119,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="../apps/shop/templates/shop/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../apps/about/templates/about/about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
-                            <ul class="dropdown-menu">
-								<li><a href="../apps/shop/templates/shop/shop.html">Sidebar Shop</a></li>
-								<li><a href="shop-detail.html">Shop Detail</a></li>
-                                <li><a href="../apps/shop/templates/shop/cart.html">Cart</a></li>
-                                <li><a href="../apps/shop/templates/shop/checkout.html">Checkout</a></li>
-                                <li><a href="../apps/shop/templates/shop/my-account.html">My Account</a></li>
-                                <li><a href="../apps/shop/templates/shop/wishlist.html">Wishlist</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="../apps/shop/templates/shop/gallery.html">Gallery</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'main' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'products-list' %}">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'products-list' %}">Posts</a></li>
                         <li class="nav-item"><a class="nav-link" href="../apps/shop/templates/shop/contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
