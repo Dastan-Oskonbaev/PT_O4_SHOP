@@ -24,6 +24,8 @@ from core.settings import BASE_DIR
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/', include('apps.shop.urls')),
+    path('about/', include('apps.about.urls')),
+    path('post/', include('apps.post.urls')),
 ]
 
 if settings.DEBUG:

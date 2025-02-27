@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 MY_APPS = [
     'apps.shop',
-    'apps.about'
+    'apps.about',
+    'apps.post',
 ]
 THIRD_PARTY_APPS = [
     'phonenumber_field'

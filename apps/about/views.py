@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from django.views import View, generic
 
-# Create your views here.
+from .models import AboutUs
+
+class AboutView(generic.ListView):
+    model = AboutUs
+    template_name = 'about/about.html'
+    context_object_name = 'abouts'
