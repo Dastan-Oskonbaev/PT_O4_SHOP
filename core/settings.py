@@ -33,6 +33,7 @@ MY_APPS = [
     'apps.shop',
     'apps.about',
     'apps.post',
+    'apps.users',
 ]
 THIRD_PARTY_APPS = [
     'phonenumber_field'
@@ -138,3 +139,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 PHONENUMBER_DEFAULT_REGION = 'KG'
+
+AUTH_USER_MODEL = 'users.CustomUser'
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = 'login'

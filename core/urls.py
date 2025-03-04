@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('apps.shop.urls')),
     path('about/', include('apps.about.urls')),
     path('post/', include('apps.post.urls')),
+    path('users/', include('apps.users.urls')),
 ]
 
 if settings.DEBUG:
